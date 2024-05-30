@@ -7,9 +7,9 @@
 Dependancy Injection (im Folgenden "DI") ist eine Programmiertechnik in der objektorientierten Programmierung.
 Das Ziel von DI ist, die Abhängigkeiten innerhalb einer Klasse an einer zentralen Stelle verwalten zu können und damit eine Klasse unabhängig von ihren Abhängigkeiten zu machen.
 Um dies zu erreichen wird die Verwendung eines Objekts von seiner Erstellung getrennt.
-Durch DI können auch 2 der 5 Prinzipien von SOLID befolgt werden, Dependancy Inversion und Single Responsibility.
-Hard-Coded Abhängigkeiten sollten aus verschiedenen Gründen vermieden werden, unter anderem weil bei Veränderung der Abhängigkeit auch die abhängige Klasse geändert werden muss.
-Zudem verteilt sich durch solche Abhängigkeiten die Konfiguration der Anwendung über den gesamten Code verteilt und schlechter zu warten ist.
+Durch den Einsatz von DI werden 2 der 5 Prinzipien von SOLID befolgt, Dependancy Inversion und Single Responsibility.
+Hard-Coded Abhängigkeiten sollten aus verschiedenen Gründen vermieden werden, zum einen weil bei Veränderung der Abhängigkeit auch die abhängige Klasse geändert werden muss.
+Außerdem verteilt sich durch solche Abhängigkeiten die Konfiguration der Anwendung über den gesamten Code und ist schlechter zu warten.
 
 #### Sprachenspezifisch
 
@@ -30,17 +30,34 @@ Innerhalb der Klassen werden die Abhängigkeiten dann im Konstruktor injected un
   - Singleton
     - Ein Singleton Service wird entweder bei der ersten Nutzung oder vom Entwickler zu einem festen Zeitpunkt erstellt, bei jeder folgenden Anfrage wird die selbe Instanz verwendet
 
-## Grafiken
-
-![Image](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
-
 ## Code
 
-Code Snippet:
-```js
-console.log('Hello World');
+Registrierung des Service in den Service-Container und Start der Anwendung:
+```cs
+HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
+
+builder.Services.AddSingleton<IServiceInterface, Service>();
+
+using IHost host = builder.Build();
+
+host.Run();
+```
+
+Constructor Injection:
+```cs
+public class Example
+{
+  private IServiceInterface Service {get; set;}
+
+  public Example(IServiceInterface service)
+  {
+    Service = service;
+  }
+}
 ```
 
 ## Quellen
 
-Link: [Google](google.de)
+Janssen, T., 2023. Design Patterns Explained – Dependency Injection. [online] Stackify. Available at: <https://stackify.com/dependency-injection/> [Accessed 30 May 2024].
+
+Microsoft, 2024. Dependency injection - .NET. [online] Available at: <https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection> [Accessed 30 May 2024].
