@@ -16,12 +16,16 @@ Stattdessen beschreibt der Entwickler die UI passend zu verschiedenen Zuständen
 
 ## Grafiken
 
-Ablauf des Render-Verhaltens in einer React-App:
+### Ablauf des Render-Verhaltens in einer React-App:
+
 ![Image](https://blog.logrocket.com/wp-content/uploads/2021/05/react-usestate-usereducer-hooks.png)
+
 Quelle: https://blog.logrocket.com/wp-content/uploads/2021/05/react-usestate-usereducer-hooks.png
 
-Darstellung der useReducer-Hook:
+### Darstellung der useReducer-Hook:
+
 ![Image](https://blog.logrocket.com/wp-content/uploads/2021/05/react-usereducer-hook.png)
+
 Quelle: https://blog.logrocket.com/wp-content/uploads/2021/05/react-usereducer-hook.png
 
 ## Code

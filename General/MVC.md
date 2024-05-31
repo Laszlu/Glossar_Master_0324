@@ -16,8 +16,10 @@ Diese Architektur einer Anwendung ermöglicht eine flexible Architektur mit hohe
 
 ## Grafiken
 
-Darstellung der MVC Architektur:
+### Darstellung der MVC Architektur:
+
 ![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/1000px-MVC-Process.svg.png)
+
 Quelle: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/1000px-MVC-Process.svg.png
 
 ## Quellen

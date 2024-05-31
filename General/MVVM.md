@@ -17,8 +17,10 @@ Das ViewModel bildet dabei das Verbindungsstück zwischen Model und View, und be
 
 ## Grafiken
 
-Darstellung der MVVM Architektur:
+### Darstellung der MVVM Architektur:
+
 ![Image](https://learn.microsoft.com/en-us/dotnet/architecture/maui/media/mvvm-pattern.png)
+
 Quelle: https://learn.microsoft.com/en-us/dotnet/architecture/maui/media/mvvm-pattern.png
 
 ## Quellen

@@ -16,7 +16,11 @@ _Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 
 ## Grafiken
 
+### Titel der Grafik
+
 ![Image](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+
+Quelle: https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png
 
 ## Code
 
