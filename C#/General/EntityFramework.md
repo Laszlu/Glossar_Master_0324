@@ -4,15 +4,15 @@
 
 #### General
 
-The Entity Framework (EF) is an ORM (Object-Relational Mapping) framework that serves as a data access layer for .NET (C#) with various databases.
-Among others, SQL databases, MySQL, SQLite, or Azure Cosmos DB can be linked.
-The Entity Framework automatically creates an abstraction of the database in classes that can be used in the code.
+The Entity Framework (EF) is an ORM (Object-Relational Mapping) framework that serves as a data access layer for .NET (C#) to connect with various databases.
+Among others, SQL databases, MySQL, SQLite, or Azure Cosmos DB can be connected.
+The Entity Framework automatically creates an abstraction of the database to different classes, which can be used in the code.
 It allows developers to interact with a database through code without using SQL queries.
 Currently, there are 2 Versions of Entity Framework available, EF6, which is no longer actively being developed, and EFCore, which is the current, state-of-the-art version.
 
 #### Language-specific
 
-Classes (Entities) constructed by Entity Framework support LINQ-Queries, change tracking and updates to the database.
+Classes, called Entities, constructed by Entity Framework support LINQ-Queries, change tracking and updates to the database.
 EF currently does not support Reflection in C#, so no changes can be made to the entities at runtime.
 
 ## Additional Information

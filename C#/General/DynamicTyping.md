@@ -2,28 +2,28 @@
 
 ## Definition
 
-#### Allgemein
+#### General
 
-Programmiersprachen bestimmen die Typen ihrer Variablen entweder zur Compile-Time oder dynamisch zur Runtime.
-Skript-Sprachen wie JavaScript oder Python werden nicht kompiliert und die Variablen können daher nur während der Runtime geprüft werden.
-Bei kompilierten Sprachen wie C# oder C++ werden die Typen beim Kompiliervorgang geprüft, aber es gibt integrierte Techniken, um diese Prüfung zu umgehen.
+Programming languages determine the types of variables either at compile-time or dynamically at runtime.
+Scripting languages like JavaScript or Python are not compiled, so variable types can only be checked at runtime.
+In compiled languages like C# or C++, types are checked during the compilation process, but there are built-in techniques to bypass this check.
 
-#### Sprachenspezifisch
+#### Language-specific
 
-In C# wurde in Version 4.0 der "dynamic" Type eingeführt, mit dem der Type Check während der Compile-Time umgangen werden kann.
-Stattdessen wird der reale Typ einer dynamic-Variabel während der Runtime ermittelt.
-In Kombination mit Reflection kann der Typ im Code abgefragt werden.
+In C# version 4.0, the `dynamic` type was introduced, allowing the type check to be bypassed at compile-time.
+Instead, the actual type of a `dynamic` variable is determined at runtime.
+In combination with reflection, the type can be queried through the code.
 
-## Zusatzinformationen
+## Additional Information
 
-- In den meisten Fällen verhält sich ein dynamischer Typ wie ein Objekttyp
-- Der Compiler prüft bei Methodenaufrufen einer dynamischen Variable nicht, ob die Methode zum Typ der Variable passt
-  - ist das nicht der Fall, wird eine Exception geworfen
-- Die Umwandlung von dynamischen in statische Typen findet implizit statt und jeder statische Typ kann auch in einen dynamischen kovertiert werden 
+- In most cases, a dynamic type behaves like an object type
+- The compiler does not check if the method call on a dynamic variable matches the type of the variable
+  - If it does not match, an exception is thrown
+- Conversion from dynamic to static types happens implicitly, and any static type can also be converted to a dynamic type
 
 ## Code
 
-Dynamische Variablen:
+Dynamic Variables:
 ```cs
 dynamic value1 = "Test"; 
 dynamic value2 = 123234; 
@@ -31,7 +31,7 @@ dynamic value3 = 2132.55;
 dynamic value4 = false;
 ```
 
-## Quellen
+## Sources
 
 ankita_saini, 2019. Dynamic Type in C#. [online] GeeksforGeeks. Available at: <https://www.geeksforgeeks.org/dynamic-type-in-c-sharp/> [Accessed 30 May 2024].
 

@@ -2,64 +2,63 @@
 
 ## Definition
 
-In React wird die UI nicht direkt vom Code aus manipuliert, beispielsweise nutzt man keine Commands wie "Diesen Button deaktivieren" oder Ähnliches.
-Stattdessen beschreibt der Entwickler die UI passend zu verschiedenen Zuständen der App und diese Zustände werden auf User Input hin getriggert.
+In React, the UI is not manipulated directly by the code, such as using commands like "Disable this button" or similar.
+Instead, the developer describes the UI according to various states of the app, and these states are then triggered by user input.
 
+## Additional Information
 
-## Zusatzinformationen
+- The most important rule for states in React is that the state should not contain duplicate or unnecessary information.
+- To share a state between multiple components, the state is moved to the nearest common parent component and then passed down through props.
+- Using a reducer, state logic can be handled in a separate function and managed in a central location.
+- To share information or states across many levels and components, a context is used, which can be queried by the consuming components.
+- Reducers and contexts can also be combined to manage complex applications.
 
-- Die wichtigste Grundregel für States in React ist, dass der State keine doppelte oder unnötigen Informationen enthalten soll
-- Um den State zwischen mehreren Components zu teilen, wird der State in den nächsten gemeinsamen Parent-Component verschoben und dann via Props übergeben
-- Mithilfe eines Reducers kann die State-Logik in eine seperate Funktion übergeben und an einer gemeinsame Stelle abgehandelt werden
-- Um Informationen oder States über viele Ebenen und Components zu teilen nutzt man einen Context, der von den betroffenen Components abgefragt werden kann
-- Reducer und Context können auch kombiniert werden, um komplexe Anwendungen zu steuern
+## Graphics
 
-## Grafiken
-
-### Ablauf des Render-Verhaltens in einer React-App:
+### Process of rendering behavior in a React app:
 
 ![Image](https://blog.logrocket.com/wp-content/uploads/2021/05/react-usestate-usereducer-hooks.png)
 
-Quelle: https://blog.logrocket.com/wp-content/uploads/2021/05/react-usestate-usereducer-hooks.png
+Source: https://blog.logrocket.com/wp-content/uploads/2021/05/react-usestate-usereducer-hooks.png
 
-### Darstellung der useReducer-Hook:
+### Representation of the useReducer-Hook:
 
 ![Image](https://blog.logrocket.com/wp-content/uploads/2021/05/react-usereducer-hook.png)
 
-Quelle: https://blog.logrocket.com/wp-content/uploads/2021/05/react-usereducer-hook.png
+Source: https://blog.logrocket.com/wp-content/uploads/2021/05/react-usereducer-hook.png
 
 ## Code
 
 ### State
 
-Erstellung des State:
+State Initialization:
 ```js
 const [count, setCount] = useState(0);
 ```
 
-Funktion zum Ändern des States:
+Function to change the State:
 ```js
 setCount(count + 1);
 ```
 
-Abfragen des State:
+Using the State:
 ```js
 <p>You clicked {count} times</p>
 ```
 
 ### Reducer
 
-Erstellung eines Reducers:
+Initialization of a Reducer:
 ```js
 const [state, dispatch] = useReducer(reducerFunc, 0);
 ```
 
-Aufruf des Reducers:
+Calling a Reducer:
 ```js
 dispatch({ type: 'INCREMENT' })
 ```
 
-Aufbau der Reducer Funktion:
+Structure of a Reducer Function:
 ```js
 function reducerFunc(state, action) {
   switch (action.type) {
@@ -77,12 +76,12 @@ function reducerFunc(state, action) {
 
 ### Context
 
-Erstellung eines Context:
+Creation of a Context:
 ```js
 export const themeContext = createContext('light');
 ```
 
-Import des Context in einem Consumer Component:
+Import of a Context in a consumer component:
 ```js
 import { useContext } from 'react';
 import { ThemeContext } from './App.js';
@@ -93,14 +92,14 @@ export default function Button({ children }) {
 }
 ```
 
-Der Tree oberhalb des Consumer Component muss in einen Provider eingefügt werden:
+The render tree above the consumer component has to be placed inside a Provider:
 ```js
 <ThemeContext.Provider value={theme}>
     {children}
 </ThemeContext.Provider>
 ```
 
-## Quellen
+## Sources
 
 Kokane, K., 2023. The modern guide to React state patterns. LogRocket Blog. Available at: <https://blog.logrocket.com/modern-guide-react-state-patterns/> [Accessed 31 May 2024].
 

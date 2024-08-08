@@ -2,21 +2,21 @@
 
 ## Definition
 
-#### Allgemein
+#### General
 
-Reflection ist die Fähigkeit einer Programmiersprache, während der Laufzeit eines Programms die eigenen Konstrukte zu untersuchen.
-Damit kann beispielsweise eine Klasse dynamisch aus einer Assembly geladen, ein Typ nach einem bestimmten Member untersucht oder sogar dynamisch Code erstellt werden.
-Ein wichtiger Anwendungsbereich für Reflection sind Unit Tests.
+Reflection is the ability of a programming language to examine its own constructs during the runtime of a program.
+For example, it allows a class to be dynamically loaded from an assembly, a type to be inspected for a specific member, or even code to be generated dynamically.
+An important application area for reflection is Unit Testing.
 
-#### Sprachenspezifisch
+#### Language-specific
 
-In C# sind verschiedene Klassen und Funktionen integriert um Reflection zu ermöglichen.
-Unter anderem kann mit GetType() oder TypeOf der Typ eines Objekts geprüft und im weiteren Verlauf des Codes verwendet werden.
-Allerdings ist Reflection in C# relativ langsam, weshalb es nur in Szenarien verwendet werden sollte, in denen traditionelle Techniken nicht ausreichen.
+In C#, various classes and functions are integrated to enable reflection.
+For example, you can use `GetType()` or `typeof` to check the type of an object and use it later in the code.
+However, reflection in C# is relatively slow, so it should only be used in scenarios where traditional techniques are insufficient.
 
 ## Code
 
-Einsatz von GetType():
+Usage of GetType():
 ```cs
 int i = 42;
 System.Type type = i.GetType();
@@ -26,7 +26,7 @@ System.Console.WriteLine(type);
 System.Int32
 ```
 
-Erstellung eines Objekts aus einer dynamisch geladenen Assembly:
+Creation of an object from a dynamically loaded assembly:
 
 ```cs
 // Calculator Class in seperate assembly Test.dll
@@ -54,7 +54,7 @@ numberPropertyInfo.SetValue(calcInstance, 10.0, null);
 ```
 
 
-## Quellen
+## Sources
 
 Altvater, A., 2023. How C# Reflection Works With Code Examples. [online] Stackify. Available at: <https://stackify.com/what-is-c-reflection/> [Accessed 30 May 2024].
 

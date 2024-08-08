@@ -2,27 +2,27 @@
 
 ## Definition
 
-Mode-View-Controller (MVC) ist ein Design Pattern in der Software Architektur, bei dem die Software in 3 zentrale Bestandteile unterteilt wird, "Model", die "View" und der "Controller".
-Mit "View" bezeichnet man meist das User Interface oder andere Schnittstellen, über die der Nutzer das Programm bedient und die grafische Darstellung des Programms.
-Das "Model" dient vor allem zur Struktrierung und Speicherung der Daten, die das Programm verarbeitet.
-Der "Controller" schließlich steuert die gesamte Anwendung und verarbeitet die Daten, die zum Beispiel vom Nutzer oder vom Sensoren oder Ähnlichem kommen.
-Diese Architektur einer Anwendung ermöglicht eine flexible Architektur mit hoher Wiederverwendbarkeit der einzelnen Module.
+Model-View-Controller (MVC) is a design pattern in software architecture where the software is divided into three central components: the Model, the View, and the Controller.
+The View usually refers to any interfaces through which the user interacts with the program and the graphical representation of the program.
+The Model primarily serves to structure and store the data that the program processes.
+The Controller manages the entire application and processes the data coming from users or other sources like sensors or APIs.
+This architecture allows for a flexible design with high reusability of the individual modules.
 
-## Zusatzinformationen
+## Additional Information
 
-- Bei einer kleinen Anwendung bedeutet der Einsatz einer MVC-Architektur einen sehr hohen Aufwand und ist nicht in jedem Fall sinnvoll
-- MVC ermöglicht eine sehr einfache Erweiterung eines Programms durch die hohe Modularität und die geringe Abhängigkeit der Module
-- In ASP.NET setzt MVC oft Dependancy Injection ein, um SOLID Prinzipien einzuhalten und die Verantwortungen der Module besser zu trennen
+- For a small application, using an MVC architecture can create a very high effort and is not always practical
+- MVC allows for very easy extension of a program due to its high modularity and low dependency between modules
+- In ASP.NET, MVC often uses Dependency Injection to follow SOLID principles and better separate the responsibilities of the modules
 
-## Grafiken
+## Graphics
 
-### Darstellung der MVC Architektur:
+### Representation of the MVC architecture:
 
 ![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/1000px-MVC-Process.svg.png)
 
-Quelle: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/1000px-MVC-Process.svg.png
+Source: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/1000px-MVC-Process.svg.png
 
-## Quellen
+## Sources
 
 Kowa, 2020. Model-View-Controller-Paradigma – GlossarWiki. [online] GlossarWiki HS Augsburg. Available at: <https://glossar.hs-augsburg.de/Model-View-Controller-Paradigma> [Accessed 30 May 2024].
 
