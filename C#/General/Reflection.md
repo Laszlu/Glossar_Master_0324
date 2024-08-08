@@ -27,6 +27,7 @@ System.Int32
 ```
 
 Erstellung eines Objekts aus einer dynamisch geladenen Assembly:
+
 ```cs
 // Calculator Class in seperate assembly Test.dll
 namespace Test
@@ -51,6 +52,7 @@ PropertyInfo numberPropertyInfo = calcType.GetProperty("Number");
 double value = (double)numberPropertyInfo.GetValue(calcInstance, null);
 numberPropertyInfo.SetValue(calcInstance, 10.0, null);
 ```
+
 
 ## Quellen
 
