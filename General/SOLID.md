@@ -8,15 +8,15 @@ SOLID is an acronym for a collection of 5 principles by Robert C. Martin that fo
 
 The 5 principles are as follows:
 - Single Responsibility Principle (1):
-  - A class should have one and only one reason to change, meaning that a class should have only one job.
+  - There should never be more than one reason for a class to change.
 - Open-Closed Principle (2):
-  - Objects or entities should be open for extension but closed for modification.
+  - Software entities should be open for extension, but closed for modification.
 - Liskov Substitution Principle (3):
-  - Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.
+  - If S is a subtype of T, then objects of type T may be replaced with objects of type S without altering any of the desirable properties of the program.
 - Interface Segregation Principle (4):
-  - A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.
+  - Many client-specific interfaces are better than one general-purpose interface.
 - Dependency Inversion Principle (5):
-  - Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module; both should depend on abstractions.
+  - Depend upon abstractions, not concretions.
 
 The main goal of these 5 principles is to make object-oriented code more understandable, flexible, and maintainable.
 
@@ -37,5 +37,3 @@ These newer definitions are:
 Oloruntoba, S. and Walia, A.S., 2024. SOLID: The First 5 Principles of Object Oriented Design | DigitalOcean. [online] Available at: <https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design> [Accessed 31 May 2024].
 
 Orner, D., 2021. Why SOLID principles are still the foundation for modern software architecture - Stack Overflow. [online] Available at: <https://stackoverflow.blog/2021/11/01/why-solid-principles-are-still-the-foundation-for-modern-software-architecture/> [Accessed 31 May 2024].
-
-Wikipedia, 2024. SOLID. In: Wikipedia. [online] Available at: <https://en.wikipedia.org/w/index.php?title=SOLID&oldid=1226113447> [Accessed 31 May 2024].

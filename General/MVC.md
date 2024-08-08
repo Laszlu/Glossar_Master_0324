@@ -27,5 +27,3 @@ Source: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.sv
 Kowa, 2020. Model-View-Controller-Paradigma – GlossarWiki. [online] GlossarWiki HS Augsburg. Available at: <https://glossar.hs-augsburg.de/Model-View-Controller-Paradigma> [Accessed 30 May 2024].
 
 Microsoft, 2023. Overview of ASP.NET Core MVC. [online] Available at: <https://learn.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-8.0> [Accessed 30 May 2024].
-
-RegisFrey, 2010. The model, view, and controller (MVC) pattern relative to the user. [online] Wikipedia. Available at: <https://en.wikipedia.org/wiki/File:MVC-Process.svg> [Accessed 30 May 2024].
