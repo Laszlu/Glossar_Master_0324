@@ -1,22 +1,22 @@
-# Titel
+# Title
 
 ## Definition
 
-#### Allgemein
+#### General
 
 _Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet._
 
-#### Sprachenspezifisch
+#### Language-specific
 
 _Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet._
 
-## Zusatzinformationen
+## Additional Information
 
 _Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet._
 
-## Grafiken
+## Graphics
 
-### Titel der Grafik
+### Title of the Graphic
 
 ![Image](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
 
@@ -29,6 +29,6 @@ Code Snippet:
 console.log('Hello World');
 ```
 
-## Quellen
+## Sources
 
 Link: [Google](google.de)
